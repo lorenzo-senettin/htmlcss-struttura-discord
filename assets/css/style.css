@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --ds-header-background: cyan;
+    --ds-header-up: orange;
+}
+
+body,
+html {
+    width: 100%;
+}
+
+
+header {
+    background-color: var(--ds-header-background);
+    justify-content: center;
+    padding: 1rem;
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--ds-header-up);
+        padding: 0.2rem 1rem;
+
+    }
+
+
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        padding: 0.2rem;
+    }
+
+
+
+    .nav-links a {
+        text-decoration: none;
+        padding: 0.2rem;
+    }
+}
