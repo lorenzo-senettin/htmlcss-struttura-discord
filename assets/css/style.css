@@ -7,6 +7,8 @@
 :root {
     --ds-header-background: cyan;
     --ds-header-up: orange;
+    --ds-jumbotron-bg: blue;
+    --ds-in-jubmbo-bg: pink;
 }
 
 body,
@@ -40,8 +42,27 @@ header {
 
 
 
-    .nav-links a {
+    .nav-links,
+    a {
         text-decoration: none;
         padding: 0.2rem;
     }
+}
+
+
+.jumbotron {
+    background-color: var(--ds-jumbotron-bg);
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    min-height: 15rem;
+}
+
+.in-jumbo {
+    width: 80%;
+    display: flex;
+    min-height: 1rem;
+    background-color: var(--ds-in-jubmbo-bg);
+    justify-content: center;
+    align-items: center;
 }
