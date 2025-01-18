@@ -15,6 +15,8 @@
     --ds-community-bg: lightgray;
     --ds-in-comm1: pink;
     --ds-in-comm2: cyan;
+    --ds-technology-bg: lightgray;
+    --ds-in-tech: green;
 }
 
 body,
@@ -154,4 +156,19 @@ header {
         flex-grow: 1;
     }
 
+}
+
+.technology {
+    background-color: var(--ds-technology-bg);
+    padding: 3rem 2rem;
+    justify-content: center;
+    min-height: 25rem;
+
+    .in-tech {
+        width: 80%;
+        min-height: 1rem;
+        background-color: var(--ds-in-tech);
+        justify-content: center;
+        align-items: center;
+    }
 }
