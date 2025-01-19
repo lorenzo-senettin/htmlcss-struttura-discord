@@ -11,7 +11,10 @@
 .in-up-foot2,
 .in-up-foot3,
 .in-up-foot4,
-.in-up-foot5 {
+.in-up-foot5,
+.down-footer,
+.down-logo,
+.down-btn {
     border: 1px dashed black;
 }
 
@@ -34,12 +37,15 @@
     --ds-in-comm2: cyan;
     --ds-technology-bg: lightgray;
     --ds-in-tech: green;
-    --ds-up-footer-bg: rgb(44, 44, 44);
+    --ds-footer-bg: rgb(44, 44, 44);
     --ds-in-up-foot-1: pink;
     --ds-in-up-foot-2: cyan;
     --ds-in-up-foot-3: cyan;
     --ds-in-up-foot-4: cyan;
     --ds-in-up-foot-5: cyan;
+    --ds-down-foot: lightblue;
+    --ds-down-logo: pink;
+    --ds-down-btn: pink;
 }
 
 body,
@@ -180,8 +186,8 @@ header {
     }
 }
 
-.site-footer {
-    background-color: var(--ds-up-footer-bg);
+.site-up-footer {
+    background-color: var(--ds-footer-bg);
     padding: 1rem;
     min-height: 15rem;
     justify-content: center;
@@ -226,4 +232,30 @@ hr {
     height: 1px;
     background-color: var(--ds-technology-bg);
     margin: 0;
+}
+
+.site-down-footer {
+    background-color: var(--ds-footer-bg);
+    justify-content: center;
+    min-height: 5rem;
+    align-items: flex-end;
+
+    .down-footer {
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--ds-down-foot);
+        width: 80%;
+        height: 2rem;
+    }
+
+    .down-logo {
+        background-color: var(--ds-down-logo);
+        padding: 0.1rem;
+    }
+
+    .down-btn {
+        background-color: var(--ds-down-btn);
+        padding: 0.1rem;
+    }
+
 }
